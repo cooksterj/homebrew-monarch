@@ -1,25 +1,25 @@
 class Monarch < Formula
   desc "An attention-first terminal multiplexer for AI coding agents"
   homepage "https://github.com/cooksterj/monarch"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cooksterj/monarch/releases/download/v0.1.1/monarch-mux-aarch64-apple-darwin.tar.xz"
-      sha256 "4a2261270b4491c66d6605ce921844a75237cc3c6a84246686d4571309f79cdd"
+      url "https://github.com/cooksterj/monarch/releases/download/v0.1.2/monarch-mux-aarch64-apple-darwin.tar.xz"
+      sha256 "5f664da206aace47dd354c99fcc015b002a1f20f54e285bb619abb89ecf5362a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cooksterj/monarch/releases/download/v0.1.1/monarch-mux-x86_64-apple-darwin.tar.xz"
-      sha256 "be7994f2c4384604f3826f3f8078ae456160650532771ac7a85f49a7e5135534"
+      url "https://github.com/cooksterj/monarch/releases/download/v0.1.2/monarch-mux-x86_64-apple-darwin.tar.xz"
+      sha256 "77b5e7291902e5f851373e0efa3382b653d0bcae165905b0a7df7a0981ec8755"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cooksterj/monarch/releases/download/v0.1.1/monarch-mux-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "fdd7d8dd0d58b16a020698071e7ff1760e231638fc3272b904f9c0fc29532785"
+      url "https://github.com/cooksterj/monarch/releases/download/v0.1.2/monarch-mux-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "1829d6cbd8aa8c63d6d50069f1f002d0639cbf68b1a4b6aef904dc31cd9e5845"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cooksterj/monarch/releases/download/v0.1.1/monarch-mux-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "4806e57a5ea29fa079372eb240253d5bb83cefac7c03b69e065eb67635b8c7e3"
+      url "https://github.com/cooksterj/monarch/releases/download/v0.1.2/monarch-mux-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "0e11cac050adaa537384d10ba7dadea1beb2f1d3018ab424b06cb6b36cad3760"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
